@@ -22,8 +22,8 @@
   threeWay = true
 [user]
   name = Jörg Thalheim
-  email = joerg@thalheim.io
-  signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKbBp2dH2X3dcU1zh+xW3ZsdYROKpJd3n13ssOP092qE joerg@turingmachine
+  email = jo@thalheim.io
+  signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKbBp2dH2X3dcU1zh+xW3ZsdYROKpJd3n13ssOP092qE jo@turingmachine
 [gpg]
   format = ssh
 [diff]
@@ -77,11 +77,11 @@
 [imap]
   folder = "Drafts"
   host = imap://imap.thalheim.io
-  user = joerg@higgsboson.tk
+  user = jo@higgsboson.tk
 [sendemail]
-  from = joerg@thalheim.io <joerg@thalheim.io>
+  from = jo@thalheim.io <jo@thalheim.io>
   smtpserver = smtp.thalheim.io
-  smtpuser = joerg@higgsboson.tk
+  smtpuser = jo@higgsboson.tk
   smtpencryption = tls
   chainreplyto = false
   smtpserverport = 587

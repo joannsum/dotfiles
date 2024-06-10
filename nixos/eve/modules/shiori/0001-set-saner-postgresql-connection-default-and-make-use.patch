@@ -1,5 +1,5 @@
 From 02acb8f9704024263bc568caf34a2dcb6604339c Mon Sep 17 00:00:00 2001
-From: =?UTF-8?q?J=C3=B6rg=20Thalheim?= <joerg@thalheim.io>
+From: =?UTF-8?q?J=C3=B6rg=20Thalheim?= <jo@thalheim.io>
 Date: Thu, 31 Aug 2023 09:39:39 +0200
 Subject: [PATCH] set saner postgresql connection default and make
  user/password optional
@@ -9,7 +9,7 @@ Content-Transfer-Encoding: 8bit
 
 This in particular fixes unix socket connections which requires no user/password to be set.
 
-Signed-off-by: Jörg Thalheim <joerg@thalheim.io>
+Signed-off-by: Jörg Thalheim <jo@thalheim.io>
 ---
  docs/Configuration.md | 18 +++++++++---------
  internal/cmd/root.go  | 19 +++++++++++++++++--

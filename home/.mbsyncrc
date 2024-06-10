@@ -1,7 +1,7 @@
 IMAPAccount thalheim
 # Address to connect to
 Host imap.thalheim.io
-User joerg@higgsboson.tk
+User jo@higgsboson.tk
 PassCmd "rbw get Eve"
 # Use SSL
 SSLType STARTTLS

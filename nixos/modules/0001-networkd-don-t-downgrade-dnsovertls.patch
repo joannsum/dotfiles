@@ -1,12 +1,12 @@
 From 0a9b7485a71ec590c3682bc195e3f1ca0b4a5d17 Mon Sep 17 00:00:00 2001
-From: =?UTF-8?q?J=C3=B6rg=20Thalheim?= <joerg@thalheim.io>
+From: =?UTF-8?q?J=C3=B6rg=20Thalheim?= <jo@thalheim.io>
 Date: Sun, 24 May 2020 09:30:21 +0100
 Subject: [PATCH] networkd: don't downgrade dnsovertls
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
 
-Signed-off-by: Jörg Thalheim <joerg@thalheim.io>
+Signed-off-by: Jörg Thalheim <jo@thalheim.io>
 ---
  src/resolve/resolved-dns-server.c | 3 +++
  1 file changed, 3 insertions(+)

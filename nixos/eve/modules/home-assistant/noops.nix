@@ -26,10 +26,10 @@
         "What do you think about Apple?"
       ];
       PersonLocation = [
-        "Where is (Shannan|Jork|Joergi)?"
-        "Where is (Shannan|Jork|Joergi) (right now|now|today)?"
-        "Is (Shannan|Jork|Joergi) [at] (home|work)?"
-        "Is (Shannan|Jork|Joergi) [at] (home|work) (right now|now|today)?"
+        "Where is (Shannan|Jork|joi)?"
+        "Where is (Shannan|Jork|joi) (right now|now|today)?"
+        "Is (Shannan|Jork|joi) [at] (home|work)?"
+        "Is (Shannan|Jork|joi) [at] (home|work) (right now|now|today)?"
       ];
     };
     intent_script = {
@@ -40,11 +40,11 @@
       NotAGirl.speech.text = "Not a girl!";
       Siri.speech.text = "Siri is a cunt";
       PersonLocation.speech.text = ''
-        {% if person == "Jork" or person == "joergi" %}
-             Joerg is {{ states.person.jorg_thalheim.state }} and {{ states.sensor.shannan_joerg_distance.state }} kilometer away from you.
+        {% if person == "Jork" or person == "joi" %}
+             jo is {{ states.person.jorg_thalheim.state }} and {{ states.sensor.shannan_jo_distance.state }} kilometer away from you.
              His phone reports, he is {% set activity = states.sensor.android_detected_activity.state %} {% if activity == "still" %} stationary {% else %} {{ activity }} {% endif %}!
            {% else %}
-             Shannan is {{ states.person.shannan_lekwati.state }} and {{ states.sensor.shannan_joerg_distance.state }} kilometer away from you.
+             Shannan is {{ states.person.shannan_lekwati.state }} and {{ states.sensor.shannan_jo_distance.state }} kilometer away from you.
              {% if states.sensor.beatrice_activity.state != "Unknown" %}
              Her phone reports, she is {{ states.sensor.beatrice_activity.state }}!
              {% endif %}

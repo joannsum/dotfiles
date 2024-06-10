@@ -31,11 +31,11 @@
 
     nixpkgs.url = "github:Mic92/nixpkgs/main";
     # for development
-    #nixpkgs.url = "/home/joerg/git/nixpkgs";
+    #nixpkgs.url = "/home/jo/git/nixpkgs";
     nur-packages.url = "github:Mic92/nur-packages";
     nur-packages.inputs.nixpkgs.follows = "nixpkgs";
     # for development
-    #sops-nix.url = "/home/joerg/git/sops-nix";
+    #sops-nix.url = "/home/jo/git/sops-nix";
     sops-nix.url = "github:Mic92/sops-nix/yubikey-support";
     sops-nix.inputs.nixpkgs.follows = "nixpkgs";
     sops-nix.inputs.nixpkgs-stable.follows = "";
@@ -70,7 +70,7 @@
     srvos.inputs.nixpkgs.follows = "nixpkgs";
 
     clan-core.url = "git+https://git.clan.lol/clan/clan-core";
-    #clan-core.url = "git+file:///home/joerg/work/clan/clan-core?ref=docs";
+    #clan-core.url = "git+file:///home/jo/work/clan/clan-core?ref=docs";
     #clan-core.url = "git+https://git.clan.lol/clan/clan-core?ref=fact_refactor2";
     clan-core.inputs.nixpkgs.follows = "nixpkgs";
     clan-core.inputs.sops-nix.follows = "sops-nix";

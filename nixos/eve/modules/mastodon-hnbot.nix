@@ -11,7 +11,7 @@
       exec hnbot \
         --points 50 \
         https://toot.matereal.eu \
-        joerg.hackernews50@thalheim.io \
+        jo.hackernews50@thalheim.io \
         "$(cat ${config.sops.secrets.hnbot-password.path})"
     '';
     serviceConfig = {

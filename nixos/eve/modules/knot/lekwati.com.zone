@@ -12,7 +12,7 @@ $TTL 600
 @ IN AAAA 2a01:4f9:2b:1605::1
 @ IN MX 10 mail.thalheim.io.
 @ IN CAA 0 issue "letsencrypt.org"
-@ IN CAA 0 iodef "mailto:joerg.caa@thalheim.io"
+@ IN CAA 0 iodef "mailto:jo.caa@thalheim.io"
 
 * IN CNAME www.thalheim.io.
 
@@ -24,11 +24,11 @@ _acme-challenge IN NS ns1.thalheim.io.
 
 ;; TXT Records
 _mta-sts IN TXT "v=STSv1; id=20181027085700Z;"
-smtp._tls IN TXT "v=TLSRPTv1;rua=mailto:joerg.tls-report@thalheim.io"
+smtp._tls IN TXT "v=TLSRPTv1;rua=mailto:jo.tls-report@thalheim.io"
 _adsp._domainkey 1 IN TXT "dkim=all;"
 default._domainkey 1 IN TXT "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDF+v8DL7amTnEsriUt3c1f7C6n99FPTxsnAnUr0HoiMxGdkcy7sIofxtPSxhQE4+jqFFPptxJ9gCQlkmh2w0vw+B9aulVpC8bltjt0Jn/o+AYy6Z/R12C3EaYGWyJbKTu1qTl3DwHKZS8ehJ2Jqkr2Ri+nWM0TQm7PjAHjboi8ywIDAQAB"
-_dmarc 1 IN TXT "\"v=DMARC1; p=none; adkim=r; aspf=r; rua=mailto:joerg.dmarc@thalheim.io; ruf=mailto:joerg.dmarc@thalheim.io; pct=100\""
-_smtp._tls IN TXT "v=TLSRPTv1;rua=mailto:joerg.smtp-tls@thalheim.io"
+_dmarc 1 IN TXT "\"v=DMARC1; p=none; adkim=r; aspf=r; rua=mailto:jo.dmarc@thalheim.io; ruf=mailto:jo.dmarc@thalheim.io; pct=100\""
+_smtp._tls IN TXT "v=TLSRPTv1;rua=mailto:jo.smtp-tls@thalheim.io"
 @ IN TXT "v=spf1 mx -all"
 _token._dnswl IN TXT "1vf4k8p0xvetb1y37xjrir5x7vtt1k11"
 @ IN TXT "google-site-verification=xxY6u05ueB-UbRdaGKjd1MpqbqhWLrUaQHNEjQ8Joq8"

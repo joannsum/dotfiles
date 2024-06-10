@@ -124,7 +124,7 @@ in
                       else:
                           print(data["id"], sender)
                   env = os.environ.copy()
-                  env["XDG_RUNTIME_DIR"] = f"/run/user/${builtins.toString config.users.users.joerg.uid}"
+                  env["XDG_RUNTIME_DIR"] = f"/run/user/${builtins.toString config.users.users.jo.uid}"
                   env["DISPLAY"] = ":0"
                   env["PATH"] = "${
                     lib.makeBinPath [
@@ -133,7 +133,7 @@ in
                       pkgs.utillinux
                     ]
                   }"
-                  subprocess.run(["runuser", "-u", "joerg", "notify-send", f"nixos-rebuild from {sender}"], env=env)
+                  subprocess.run(["runuser", "-u", "jo", "notify-send", f"nixos-rebuild from {sender}"], env=env)
                   with open("/tmp/nixos-rebuild.log", "w") as f:
                     f.write(f"nixos-rebuild from {sender}:\n")
                     f.write(message)

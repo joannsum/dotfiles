@@ -54,7 +54,7 @@
   services.pcscd.enable = true;
 
   users.mutableUsers = false;
-  users.users.joerg.hashedPasswordFile =
+  users.users.jo.hashedPasswordFile =
     config.clanCore.facts.services.root-password.secret.password-hash.path;
 
   # https://community.frame.work/t/guide-linux-battery-life-tuning/6665
@@ -101,7 +101,7 @@
     serviceConfig = {
       Type = "oneshot";
       Environment = "XDG_RUNTIME_DIR=/run/user/1000";
-      User = "joerg";
+      User = "jo";
       RemainAfterExit = "yes";
       ExecStart = "${pkgs.pamixer}/bin/pamixer --mute";
     };

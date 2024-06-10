@@ -105,7 +105,7 @@ in
   #qt.platformTheme = "qt5ct";
 
   # brightnessctl
-  users.users.joerg.extraGroups = [ "video" ];
+  users.users.jo.extraGroups = [ "video" ];
 
   #systemd.user.targets.sway-session = {
   #  description = "Sway compositor session";

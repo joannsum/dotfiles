@@ -104,10 +104,10 @@ values."
                                               " AND NOT maildir:/thalheim.io/.Entwickler"
                                               " AND NOT maildir:/thalheim.io/.Netzwerke"
                                               " AND NOT maildir:/thalheim.io/.zlist.*")
-           mu4e-user-mail-address-list '("joerg@thalheim.io" "joerg@higgsboson.tk" "s1691654@sms.ed.ac.uk")
+           mu4e-user-mail-address-list '("jo@thalheim.io" "jo@higgsboson.tk" "s1691654@sms.ed.ac.uk")
            message-send-mail-function 'smtpmail-send-it
            smtpmail-smtp-server "mail.thalheim.io"
-           smtpmail-smtp-user "joerg@higgsboson.tk"
+           smtpmail-smtp-user "jo@higgsboson.tk"
            smtpmail-smtp-service 587
            smtpmail-stream-type 'starttls
            mml-secure-openpgp-encrypt-to-self t)
@@ -440,7 +440,7 @@ you should place your code here."
   ;; https://magit.vc/manual/magit/Performance.html
   (setq magit-refresh-status-buffer nil)
 
-  ;(setq org-caldav-url "https://cloud.thalheim.io/remote.php/dav/calendars/joerg@higgsboson.tk"
+  ;(setq org-caldav-url "https://cloud.thalheim.io/remote.php/dav/calendars/jo@higgsboson.tk"
   ;      org-caldav-calendar-id "personal"
   ;      org-caldav-inbox "~/.org/calendar.org"
   ;      org-caldav-files '("~/.org/calendar.org")
@@ -512,7 +512,7 @@ you should place your code here."
   (define-key mu4e-headers-mode-map (kbd "S") 'mu4e-headers-mark-for-spam)
 
   (setq user-full-name  "Jörg Thalheim"
-        user-mail-address "joerg@thalheim.io")
+        user-mail-address "jo@thalheim.io")
   (add-to-list 'mu4e-bookmarks
                (make-mu4e-bookmark
                 :name  "Big messages"
@@ -558,7 +558,7 @@ you should place your code here."
   (spacemacs/set-leader-keys "rf" 'copy-current-line-position-to-clipboard)
 
   ; make recentf unique per host in case .emacs.d is stored in a NFS share to avoid lock contention
-  (setq recentf-save-file (expand-file-name (concat "recentf-" system-name) "/home/joerg/.emacs.d/.cache/"))
+  (setq recentf-save-file (expand-file-name (concat "recentf-" system-name) "/home/jo/.emacs.d/.cache/"))
 
   (defun shell-stdout-to-string (command)
     (with-output-to-string

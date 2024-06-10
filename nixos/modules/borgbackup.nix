@@ -51,9 +51,9 @@
       "/var/tmp"
       "/var/log"
 
-      "/home/joerg/sync"
-      "/home/joerg/Videos"
-      "/home/joerg/mnt"
+      "/home/jo/sync"
+      "/home/jo/Videos"
+      "/home/jo/mnt"
     ];
   };
 

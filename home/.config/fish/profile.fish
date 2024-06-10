@@ -1,4 +1,4 @@
-set -x PATH ~/bin ~/.cabal/bin /home/joerg/.npm-packages/bin /usr/bin/core_perl/ /usr/local/bin $PATH
+set -x PATH ~/bin ~/.cabal/bin /home/jo/.npm-packages/bin /usr/bin/core_perl/ /usr/local/bin $PATH
 
 function _clean_up_path
   set -l new_path

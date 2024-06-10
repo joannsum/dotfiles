@@ -5,7 +5,7 @@
       SuspendLaptop = [ "Suspend [my] laptop" ];
       SuspendBernie = [ "Suspend Bernie" ];
       UpdateShannansLocation = [ "Update Shannan's location" ];
-      UpdateJoergsLocation = [ "Update York's location" ];
+      UpdatejosLocation = [ "Update York's location" ];
     };
     intent_script.SuspendLaptop = {
       speech.text = "Suspend laptop";
@@ -21,7 +21,7 @@
       speech.text = "Updated Shannan's location";
       action.service = "icloud.update";
     };
-    intent_script.UpdateJoergsLocation = {
+    intent_script.UpdatejosLocation = {
       speech.text = "Updated Yorks's location";
       action.service = "notify.mobile_app_android";
       action.data.message = "request_location_update";

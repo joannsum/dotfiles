@@ -10,7 +10,7 @@ in
 {
   services.rtorrent.enable = true;
   services.rtorrent.package = pkgs.jesec-rtorrent;
-  services.rtorrent.user = "joerg";
+  services.rtorrent.user = "jo";
   services.rtorrent.group = "users";
   services.rtorrent.dataDir = "/data/torrent";
   services.rtorrent.dataPermissions = "0755";
@@ -30,7 +30,7 @@ in
     wants = [ "rtorrent.service" ];
     after = [ "rtorrent.service" ];
     serviceConfig = {
-      User = "joerg";
+      User = "jo";
       ExecStart = "${pkgs.nodePackages.flood}/bin/flood --auth none --port 3003 --rtsocket /run/rtorrent/rpc.sock";
     };
   };

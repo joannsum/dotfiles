@@ -3,9 +3,9 @@ from_state = data.get("from_state")
 entity_id = data.get("entity_id")
 
 shannan = hass.states.get("device_tracker.beatrice")
-joerg = hass.states.get("person.jorg_thalheim")
-calendar = hass.states.get("calendar.joerg_shannan_jorg_thalheim")
-not_together = hass.states.get("input_boolean.shannan_joerg_not_together")
+jo = hass.states.get("person.jorg_thalheim")
+calendar = hass.states.get("calendar.jo_shannan_jorg_thalheim")
+not_together = hass.states.get("input_boolean.shannan_jo_not_together")
 
 home = "home"
 university = "University"
@@ -17,14 +17,14 @@ def get_message() -> str | None:
     logger.info(f"to_state: {to_state}")
     logger.info(f"from_state: {from_state}")
     logger.info(f"entity_id: {entity_id}")
-    logger.info(f"joerg.entity_id: {joerg.entity_id}")
+    logger.info(f"jo.entity_id: {jo.entity_id}")
     logger.info(f"shannan.entity_id: {shannan.entity_id}")
     logger.info(f"home: {home}")
     logger.info(f"uni: {university}")
-    logger.info(f"entity_id == joerg: {joerg.entity_id == entity_id}")
+    logger.info(f"entity_id == jo: {jo.entity_id == entity_id}")
     logger.info(f"entity_id == shannan: {shannan.entity_id == entity_id}")
 
-    name = "Jörg" if entity_id == joerg.entity_id else "Shannan"
+    name = "Jörg" if entity_id == jo.entity_id else "Shannan"
 
     if to_state == home:
         return f"{name} is home"
@@ -46,9 +46,9 @@ def main() -> None:
     if message is None:
         return
     if not_together.state == "off":
-        logger.info("skip notification, shannan and joerg are together")
+        logger.info("skip notification, shannan and jo are together")
         return
-    if entity_id == joerg.entity_id:
+    if entity_id == jo.entity_id:
         notify_service = "mobile_app_beatrice"
     else:
         notify_service = "pushover"
@@ -56,12 +56,12 @@ def main() -> None:
     logger.info(f"notify_service: {notify_service}")
     hass.services.call("notify", notify_service, {"message": message}, blocking=False)
 
-    if joerg.state == shannan.state:
-        logger.info("shannan and joerg are together now")
+    if jo.state == shannan.state:
+        logger.info("shannan and jo are together now")
         hass.services.call(
             "input_boolean",
             "turn_off",
-            {"entity_id": "input_boolean.shannan_joerg_not_together"},
+            {"entity_id": "input_boolean.shannan_jo_not_together"},
             blocking=False,
         )
 

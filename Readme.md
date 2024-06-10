@@ -20,7 +20,7 @@ nix-shell> homeshick clone https://github.com/Mic92/dotfiles.git
 # Bootstrap single user nix:
 
 ```console
-$ install -d -m755 -o joerg -g joerg /nix
+$ install -d -m755 -o jo -g jo /nix
 $ curl https://nixos.org/nix/install | sh
 ```
 
@@ -49,4 +49,4 @@ $ nix run 'github:Mic92/dotfiles#nvim'
 
 # Need help with nix?
 
-Drop me an email at joerg@thalheim.io to book consultation on Nix/NixOS/DevOps related topics
+Drop me an email at jo@thalheim.io to book consultation on Nix/NixOS/DevOps related topics

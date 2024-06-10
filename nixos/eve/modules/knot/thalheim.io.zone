@@ -67,7 +67,7 @@ blob64 IN NS ns1.thalheim.io.
 rauter IN NS ns1.thalheim.io.
 
 @ IN CAA 0 issue "letsencrypt.org"
-@ IN CAA 0 iodef "mailto:joerg.caa@thalheim.io"
+@ IN CAA 0 iodef "mailto:jo.caa@thalheim.io"
 
 ;; University
 stable-diffusion CNAME jack.dse.in.tum.de.
@@ -80,16 +80,16 @@ mail IN AAAA 2a01:4f9:4a:42e8::1
 imap IN A 95.217.199.121
 imap IN AAAA 2a01:4f9:4a:42e8::1
 _mta-sts IN TXT "v=STSv1; id=20181027085700Z;"
-smtp._tls IN TXT "v=TLSRPTv1;rua=mailto:joerg.tls-report@thalheim.io"
+smtp._tls IN TXT "v=TLSRPTv1;rua=mailto:jo.tls-report@thalheim.io"
 ;
 _adsp._domainkey IN TXT "dkim=all;"
 default._domainkey IN TXT "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCgVpKyJL+JXhYefL05+wal58+PK1s5y1nf1uI7aguTbQFaM3wo3cs/7CaxBK1a+JNCd7f1sgmbdR17CzsiUUQO5GLsyl6bS4VGZv1XMMSuTdCpOT08iY0s9JikME6kPg9rxbo35ET9DtDDEqmgwbUcIfl/eD8G4jwTvyPYJPfFKQIDAQAB"
-_dmarc IN TXT "v=DMARC1; p=none; adkim=r; aspf=r; rua=mailto:joerc.dmarc@thalheim.io; ruf=mailto:joerg.dmarc@thalheim.io; pct=100"
+_dmarc IN TXT "v=DMARC1; p=none; adkim=r; aspf=r; rua=mailto:joerc.dmarc@thalheim.io; ruf=mailto:jo.dmarc@thalheim.io; pct=100"
 @ IN TXT "v=spf1 ip4:95.217.199.121 ip6:2a01:4f9:4a:42e8::/64 -all"
 
 _token._dnswl IN TXT "v6e9a15zje7o03w1oos9ashj258elvdh"
 @ IN TXT "google-site-verification=TGvlDYzS1IB0wcHO32Bnzfb5IVFbYm6Roeg27TU6XjY"
-_smtp._tls IN TXT "v=TLSRPTv1;rua=mailto:joerg.smtp-tls@thalheim.io"
+_smtp._tls IN TXT "v=TLSRPTv1;rua=mailto:jo.smtp-tls@thalheim.io"
 
 ;; XMPP
 jabber IN A 95.217.199.121
@@ -124,5 +124,5 @@ git IN SSHFP 4 1 96750ca52c9f8daf87e4357bab14c029db1d5da1
 git IN SSHFP 4 2 a9f03d1083f98cf257561ee97ea2086e2d308c5ece581e42bd35f6c2ed114ac4
 
 ;; Keybase & GPG
-joerg._pka IN TXT "v=pka1;fpr=4ABA07382AD57E6B9AA4E88DCA4106B8D7CC79FA;uri=https://thalheim.io/joerg/joerg.asc"
+jo._pka IN TXT "v=pka1;fpr=4ABA07382AD57E6B9AA4E88DCA4106B8D7CC79FA;uri=https://thalheim.io/jo/jo.asc"
 _keybase IN TXT "keybase-site-verification=woupLHxi4iAKOAHIOaKDPJwR3GiAzVagmTp68g0b2uM"

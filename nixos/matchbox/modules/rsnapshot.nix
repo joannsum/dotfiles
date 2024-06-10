@@ -38,7 +38,7 @@
       backup	/mnt/hdd/public/falk	matchbox/
       backup	/mnt/hdd/public/Daniela	matchbox/
       backup	/mnt/hdd/public/Bilder	matchbox/
-      backup	/mnt/hdd/public/Joerg	matchbox/
+      backup	/mnt/hdd/public/jo	matchbox/
     '';
     cronIntervals = {
       monthly = "0 2 1 * *";

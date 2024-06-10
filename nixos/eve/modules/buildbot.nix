@@ -28,7 +28,7 @@
   services.buildbot-master = {
     extraConfig = ''
       from buildbot.manhole import AuthorizedKeysManhole
-      c['manhole'] = AuthorizedKeysManhole("tcp:12456", "/etc/ssh/authorized_keys.d/joerg", "/var/lib/buildbot/master/ssh/")
+      c['manhole'] = AuthorizedKeysManhole("tcp:12456", "/etc/ssh/authorized_keys.d/jo", "/var/lib/buildbot/master/ssh/")
     '';
     pythonPackages = ps: [
       ps.bcrypt

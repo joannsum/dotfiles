@@ -80,8 +80,8 @@
       sensor = [
         {
           platform = "template";
-          sensors.shannan_joerg_distance.value_template = ''{{ distance('person.jorg_thalheim', 'person.shannan_lekwati') | round(2) }}'';
-          sensors.joerg_last_updated = {
+          sensors.shannan_jo_distance.value_template = ''{{ distance('person.jorg_thalheim', 'person.shannan_lekwati') | round(2) }}'';
+          sensors.jo_last_updated = {
             friendly_name = "Jörg's last location update";
             value_template = ''{{ states.person.jorg_thalheim.last_updated.strftime('%Y-%m-%dT%H:%M:%S') }}Z'';
             device_class = "timestamp";

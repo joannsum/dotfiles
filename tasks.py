@@ -228,7 +228,7 @@ def deploy_matchbox(c: Any) -> None:
                     target_host=try_local("matchbox"),
                     flake_attr="matchbox",
                 ),
-                user="joerg",
+                user="jo",
             ),
         ],
     )
@@ -245,7 +245,7 @@ def deploy_dotfiles(c: Any) -> None:
 
     def deploy_homemanager(host: DeployHost) -> None:
         host.run(
-            f"""sudo -u joerg zsh <<'EOF'
+            f"""sudo -u jo zsh <<'EOF'
 cd $HOME
 source $HOME/.zshrc
 homeshick pull

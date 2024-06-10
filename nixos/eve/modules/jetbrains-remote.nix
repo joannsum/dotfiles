@@ -7,5 +7,5 @@
   ];
 
   sops.secrets.xrdp-password.neededForUsers = true;
-  users.users.joerg.passwordFile = config.sops.secrets.xrdp-password.path;
+  users.users.jo.passwordFile = config.sops.secrets.xrdp-password.path;
 }

@@ -45,7 +45,7 @@
     ];
     shell = "/run/current-system/sw/bin/zsh";
     uid = 1001;
-    inherit (config.users.users.joerg) openssh;
+    inherit (config.users.users.jo) openssh;
   };
   networking.hostName = "bernie";
   networking.hostId = "ac174b52";

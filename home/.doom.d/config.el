@@ -7,7 +7,7 @@
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
 (setq user-full-name "Jörg Thalheim"
-      user-mail-address "joerg@thalheim.io")
+      user-mail-address "jo@thalheim.io")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
@@ -71,7 +71,7 @@
 
 ;; make recentf unique per host in case .emacs.d is stored in a NFS share to avoid lock contention
 (setq recentf-save-file
-      (expand-file-name (concat "recentf-" system-name) "/home/joerg/.emacs.d/.local/.cache/"))
+      (expand-file-name (concat "recentf-" system-name) "/home/jo/.emacs.d/.local/.cache/"))
 
 (defun shell-stdout-to-string (command)
   (with-output-to-string

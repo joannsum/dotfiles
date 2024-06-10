@@ -1,12 +1,12 @@
 From 4797a2f62ab3d2716d313aa4a3170ba9672a93b6 Mon Sep 17 00:00:00 2001
-From: =?UTF-8?q?J=C3=B6rg=20Thalheim?= <joerg@thalheim.io>
+From: =?UTF-8?q?J=C3=B6rg=20Thalheim?= <jo@thalheim.io>
 Date: Fri, 22 Mar 2024 08:46:07 +0100
 Subject: [PATCH] make atuin on zfs fast again
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
 
-Signed-off-by: Jörg Thalheim <joerg@thalheim.io>
+Signed-off-by: Jörg Thalheim <jo@thalheim.io>
 ---
  atuin-client/src/database.rs            | 4 ++--
  atuin-client/src/record/sqlite_store.rs | 2 ++

@@ -16,7 +16,7 @@ set width 0
 set auto-load safe-path /
 set breakpoint pending on
 define gef
-  source /home/joerg/.gdbinit-gef.py
+  source /home/jo/.gdbinit-gef.py
 end
 
 define src

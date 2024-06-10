@@ -92,7 +92,7 @@
   qt.platformTheme = "qt5ct";
 
   # brightnessctl
-  users.users.joerg.extraGroups = [ "video" ];
+  users.users.jo.extraGroups = [ "video" ];
 
   systemd.user.targets.qtile-session = {
     description = "Qtile compositor session";

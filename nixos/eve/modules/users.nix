@@ -10,9 +10,9 @@ let
 
   alfredsNas = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPIPMj5mMsKYTkIOw7HPEOVemnRVguP0Q3DZzjcVmefe8f31YOCQCTTkwEWAP+USdW+lNJ1vInpzFvmeUQC1XWqiWEg+b6KqgcvRHRnmXqT5XoV36t3KufJzsfCGYDDwQmWzw9YfdWieJ8i5t3AKFJloUiEXrQ+9PupoOKh86htS3XUL/4x9SMga2ykNGbtrpUfmD0E60BeRZMM089xWKY8hear4RHYSw5iUwHRXdrKlGqc2iTqF69vyzgJqyS1gMRZTk0IQZKuFzz7zOjQ8PsOnU7vZP7SqersaoGmf1WFkauuzu1LuG0aF2xdADmMmd5q4AOd916oEYU871+J7JT root@nas";
 
-  joerg = [
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKbBp2dH2X3dcU1zh+xW3ZsdYROKpJd3n13ssOP092qE joerg@turingmachine"
-    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGoQXNL3B1+pS4WYfhvn4ULb6oCNovT+dpWist7osToj5UVQ64odlcemnSG07GRcEnwf2zDTYq8eatomGQ94VsnmWuKaYzF8nqNl+qHRM49nS+Myi2ETn0B5fnMSh45lmkjR5rL/tb02EXUVoNf7acE2K3Q8M/tGFEdCdQNuqEgishi5nrs/WvZHn0cxP1anv8WRtm2qlj0jtH1rYmo7n/xsPb15FNBaE92aQXTkGoj6xdQknGWnGjLLm33lGIxRKvHTJ9T2NGte4gTYC/CADPxU2x5nq8zGDTNna/YMUyKmlqgGm+p+sE9dERmxKtquLgyE8mNvjDSMvtnrkMojN5 joerg@turingmachine"
+  jo = [
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKbBp2dH2X3dcU1zh+xW3ZsdYROKpJd3n13ssOP092qE jo@turingmachine"
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGoQXNL3B1+pS4WYfhvn4ULb6oCNovT+dpWist7osToj5UVQ64odlcemnSG07GRcEnwf2zDTYq8eatomGQ94VsnmWuKaYzF8nqNl+qHRM49nS+Myi2ETn0B5fnMSh45lmkjR5rL/tb02EXUVoNf7acE2K3Q8M/tGFEdCdQNuqEgishi5nrs/WvZHn0cxP1anv8WRtm2qlj0jtH1rYmo7n/xsPb15FNBaE92aQXTkGoj6xdQknGWnGjLLm33lGIxRKvHTJ9T2NGte4gTYC/CADPxU2x5nq8zGDTNna/YMUyKmlqgGm+p+sE9dERmxKtquLgyE8mNvjDSMvtnrkMojN5 jo@turingmachine"
   ];
 
   shannan = [
@@ -34,12 +34,12 @@ in
       ];
     };
 
-    joerg = {
+    jo = {
       isNormalUser = true;
       uid = 2003;
       extraGroups = [ "wheel" ];
       shell = "/run/current-system/sw/bin/zsh";
-      openssh.authorizedKeys.keys = joerg;
+      openssh.authorizedKeys.keys = jo;
     };
 
     shannan = {
@@ -50,7 +50,7 @@ in
       openssh.authorizedKeys.keys = shannan;
     };
 
-    root.openssh.authorizedKeys.keys = alfred ++ joerg ++ shannan;
+    root.openssh.authorizedKeys.keys = alfred ++ jo ++ shannan;
   };
 
   nix.settings.allowed-users = [

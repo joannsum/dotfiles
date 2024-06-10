@@ -1,7 +1,7 @@
 { pkgs, ... }:
 let
   sshKey = [
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKbBp2dH2X3dcU1zh+xW3ZsdYROKpJd3n13ssOP092qE joerg@turingmachine"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKbBp2dH2X3dcU1zh+xW3ZsdYROKpJd3n13ssOP092qE jo@turingmachine"
   ];
   # Locate your wifi device with `lspci -v | less`
   # In this example the output is:
